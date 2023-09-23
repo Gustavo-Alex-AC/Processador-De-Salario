@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SalárioFácil-Resultados</title>
+    <link rel="stylesheet" href="/css/stylerult.css">
+
+  </head>
+  <body>
+    <div class="container1">
+      <h1>Sr(a) <%= salary.name %></h1>
+      <p>Salario Bruto(kz): <%= salary.salarioBruto %></p>
+      <p>INSS(kz): <%= salary.inss %></p>
+      <p>IRT(kz): <%= salary.irt %></p>
+      <p>Faltas(kz): <%= salary.faltas %></p>
+      <p>Outros Descontos(kz): <%= salary.outrosDescontos %></p>
+      <p>Salario Liquido(kz): <%= salary.salarioLiquido %></p>
+
+      <form action="/results" method="post">
+        <a href="/<%=salary._id%>">Actualização</a>
+        <button type="submit" >Voltar</button>
+      </form>
+    </div>
+  </body>
+</html>

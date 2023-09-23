@@ -1,0 +1,17 @@
+<%- include('partials/header'); -%>
+
+<div class="container">
+  <!-- <h1>Processador De Salário</h1> -->
+  <% salarios.forEach((salario) => { %>
+    <h2 class="name"><%= salario.name %></h2>
+    <p>Salario Liquido: <%=salario.salarioLiquido%> kwz ... <a href="/home/<%= salario.name%>" >Ver mais</a></p>
+  <%});%>
+
+  <form  action="/home" method="post">
+    <button class="btn btn-lg" type="submit">Processar Novo Salário</button>
+  </form>
+  <a class="button btn btn-light btn-lg" href="/logout" role="button">Logout</a>
+
+</div>
+
+<%- include('partials/footer'); -%>

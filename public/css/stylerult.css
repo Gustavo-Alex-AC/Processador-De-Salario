@@ -1,0 +1,48 @@
+body {
+  background-color: #06283D;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.container1 {
+  margin: auto;
+  /* text-align: center; */
+  width: 50%;
+  margin-top: 100px;
+}
+
+h1{
+  text-align: center;
+}
+
+h1 {
+  color: #ffff;
+}
+
+p {
+  color: #EEEEEE;
+}
+
+h1, p {
+  background-color: #256D85;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+form {
+  text-align: center;
+}
+
+button, a {
+  background-color: #256D85;
+  color: #F2F2F2;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
